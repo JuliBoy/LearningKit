@@ -1,0 +1,49 @@
+PODS:
+  - CHListViewKit (0.0.19):
+    - JiuFoundation (< 1)
+    - ViewGallery
+  - CoreSwift (0.1.2):
+    - CoreSwift/CoreCxx (= 0.1.2)
+    - CoreSwift/CoreSwift (= 0.1.2)
+  - CoreSwift/CoreCxx (0.1.2)
+  - CoreSwift/CoreSwift (0.1.2)
+  - JiuFoundation (0.12.3):
+    - CoreSwift/CoreSwift (< 1)
+  - LearningKit (0.1.0):
+    - JiuFoundation (< 1)
+  - LookinServer (1.1.5):
+    - LookinServer/Core (= 1.1.5)
+  - LookinServer/Core (1.1.5)
+  - ViewGallery (0.1.12):
+    - CoreSwift (< 1)
+    - JiuFoundation (< 1)
+
+DEPENDENCIES:
+  - CHListViewKit (< 1)
+  - JiuFoundation (< 1)
+  - LearningKit (from `../`)
+  - LookinServer
+
+SPEC REPOS:
+  https://code.9ji.com/9ji_APP_iOS/CHCocoaSpec.git:
+    - CHListViewKit
+    - CoreSwift
+    - JiuFoundation
+    - LookinServer
+    - ViewGallery
+
+EXTERNAL SOURCES:
+  LearningKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CHListViewKit: 8c2f8b3c6d1d7cd28bf92bc6108494a29c5a5a37
+  CoreSwift: 76c0383dd58e696dac0e86d1599c1aa8fe10f475
+  JiuFoundation: befe910d78deabe02dd5dfea36bf1ae567021838
+  LearningKit: 44ad722bc0ca7d2c13c3572232d448b2200e289e
+  LookinServer: ceb5dac66f2090d5c5df8de8051adc691ffd1234
+  ViewGallery: 8721cd11c1b5a51ee10baa66e934d566fac12216
+
+PODFILE CHECKSUM: 2574e1899de44fad4366aae09204dde503a597e5
+
+COCOAPODS: 1.11.3

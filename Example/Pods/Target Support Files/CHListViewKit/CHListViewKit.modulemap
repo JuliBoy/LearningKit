@@ -1,0 +1,6 @@
+framework module CHListViewKit {
+  umbrella header "CHListViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

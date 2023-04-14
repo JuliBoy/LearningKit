@@ -1,9 +1,13 @@
+source 'https://code.9ji.com/9ji_APP_iOS/CHCocoaSpec.git'
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '9.0'
 
 target 'LearningKit_Example' do
   pod 'LearningKit', :path => '../'
+  pod 'JiuFoundation', '< 1'
+  pod 'CHListViewKit', '< 1'
+  pod 'LookinServer', :configurations => ['Debug']
 
   target 'LearningKit_Tests' do
     inherit! :search_paths

@@ -1,0 +1,35 @@
+{
+  "name": "LearningKit",
+  "version": "0.1.0",
+  "summary": "A short description of LearningKit.",
+  "description": "To learn how to create and manage private libraries using Cocoapods.",
+  "homepage": "https://github.com/JuliBoy/LearningKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "鲍宗平": "14541@9ji.com"
+  },
+  "source": {
+    "git": "https://github.com/JuliBoy/LearningKit",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LearningKit/Classes/**/*",
+  "swift_versions": "5.3",
+  "static_framework": true,
+  "dependencies": {
+    "JiuFoundation": [
+      "< 1"
+    ]
+  },
+  "resource_bundles": {
+    "LearningKitAssets": [
+      "LearningKit/Assets/**/*.{xcassets,xib}"
+    ]
+  },
+  "swift_version": "5.3"
+}

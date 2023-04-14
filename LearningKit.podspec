@@ -10,27 +10,27 @@ Pod::Spec.new do |s|
   s.name             = 'LearningKit'
   s.version          = '0.1.0'
   s.summary          = 'A short description of LearningKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+To learn how to create and manage private libraries using Cocoapods.
                        DESC
 
-  s.homepage         = 'https://github.com/鲍宗平/LearningKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/JuliBoy/LearningKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '鲍宗平' => '14541@9ji.com' }
-  s.source           = { :git => 'https://github.com/鲍宗平/LearningKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/JuliBoy/LearningKit', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LearningKit/Classes/**/*'
+  
+  s.swift_version = "5.3"
+  s.static_framework = true
+  
+  s.dependency 'JiuFoundation', '< 1'
+  
+  s.resource_bundles = {
+    'LearningKitAssets' => ['LearningKit/Assets/**/*.{xcassets,xib}']
+  }
   
   # s.resource_bundles = {
   #   'LearningKit' => ['LearningKit/Assets/*.png']

@@ -1,0 +1,11 @@
+framework module JiuFoundation {
+  umbrella header "JiuFoundation.h"
+
+  export *
+  module * { export * }
+}
+
+module JiuFoundation.Swift {
+  header "JiuFoundation-Swift.h"
+  requires objc
+}
