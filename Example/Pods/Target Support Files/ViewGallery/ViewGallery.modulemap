@@ -1,0 +1,6 @@
+framework module ViewGallery {
+  umbrella header "ViewGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}

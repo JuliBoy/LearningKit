@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05F68B91EEAD54E648A2846C /* LearningKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LearningKit.podspec; path = ../LearningKit.podspec; sourceTree = "<group>"; };
+		05F68B91EEAD54E648A2846C /* LearningKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LearningKit.podspec; path = ../LearningKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2ED26ACD8A53FE3EBCCDDEF6 /* Pods-LearningKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LearningKit_Tests/Pods-LearningKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3DFC4B55358F18499A8A1C7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3DFC4B55358F18499A8A1C7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4AEB9FE54A04ED5DEC7B8638 /* Pods-LearningKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LearningKit_Example/Pods-LearningKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LearningKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		850284A72B1244291BE92238 /* Pods-LearningKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LearningKit_Example/Pods-LearningKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A6E5104BD23AD921366C85D9 /* Pods_LearningKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95AAB96B8A37CDB1D14702 /* Pods-LearningKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LearningKit_Tests/Pods-LearningKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D09602AE77967ADA7E1F6A74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D09602AE77967ADA7E1F6A74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				2ED26ACD8A53FE3EBCCDDEF6 /* Pods-LearningKit_Tests.debug.xcconfig */,
 				CB95AAB96B8A37CDB1D14702 /* Pods-LearningKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				47622B1BA6F4FE56BC68D8BA /* [CP] Embed Pods Frameworks */,
+				2BAA43E47F084E5508691A7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 33AADJ7BN2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 33AADJ7BN2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +265,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BAA43E47F084E5508691A7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningKit_Example/Pods-LearningKit_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CHListViewKit/CHListViewKitAssets.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/LearningKit/LearningKitAssets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHListViewKitAssets.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LearningKitAssets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningKit_Example/Pods-LearningKit_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		47622B1BA6F4FE56BC68D8BA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,11 +292,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LearningKit_Example/Pods-LearningKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LearningKit/LearningKit.framework",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LearningKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,6 +501,7 @@
 			baseConfigurationReference = 4AEB9FE54A04ED5DEC7B8638 /* Pods-LearningKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 33AADJ7BN2;
 				INFOPLIST_FILE = LearningKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +517,7 @@
 			baseConfigurationReference = 850284A72B1244291BE92238 /* Pods-LearningKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 33AADJ7BN2;
 				INFOPLIST_FILE = LearningKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +532,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED26ACD8A53FE3EBCCDDEF6 /* Pods-LearningKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 33AADJ7BN2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +556,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB95AAB96B8A37CDB1D14702 /* Pods-LearningKit_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 33AADJ7BN2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

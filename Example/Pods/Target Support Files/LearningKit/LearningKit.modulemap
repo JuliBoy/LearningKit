@@ -1,0 +1,6 @@
+framework module LearningKit {
+  umbrella header "LearningKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
